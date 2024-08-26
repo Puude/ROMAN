@@ -1,24 +1,23 @@
-# SOS-Match
+# ROMAN
 
-**Segmentation for Open-Set Robust Correspondence Search and Robot Localization in Unstructured Environments** is a research project aimed at achieving efficient and accurate frame alignment between agents using sparsity.
+**Outdoor Global Localization via Robust Registration of 3D Open-Set Segments** is a research project aimed at achieving efficient and accurate global localiztion using sparse segments.
 
 ## Authors
 
-- [Annika Thomas*](https://www.annikathomas.com)
-- [Jouko Kinnari*](https://www.linkedin.com/in/jouko-kinnari/)
-- [Parker Lusk](https://plusk01.github.io/)
-- [Kota Kondo](https://www.linkedin.com/in/kkondo/?locale=en_US)
+- [Mason Peterson](https://github.com/mbpeterson70)
+- [Yi Xuan Jia](https://acl.mit.edu/people/yixuany)
+- [Yulun Tian](https://www.tianyulun.com/)
+- [Annika Thomas](https://www.annikathomas.com)
 - [Jonathan How](https://www.mit.edu/~jhow/)
 
 ## Links
 
-- **Code**: [GitHub Repository](https://github.com/yourusername/sos-slam)
-- **Paper**: [Research Paper](https://drive.google.com/file/d/1b7TZhalVafbWrrrUepgkYl8vfeb106AZ/view?usp=sharing)
-- **Datasets**: [Dataset Repository](https://www.dropbox.com/scl/fo/he8rq4ucgywmoha2y95zp/h?rlkey=cwt7q9whl4koelo4raiaptlfg&dl=0)
+- **Code**: [GitHub Repository]()
+- **Paper**: [Research Paper]()
 
 ## Abstract
 
-We present SOS-Match, a novel framework for detecting and matching objects in unstructured environments. Our system consists of 1) a front-end mapping pipeline using a zero-shot segmentation model to extract object masks from images and track them across frames and 2) a frame alignment pipeline that uses the geometric consistency of object relationships to efficiently localize across a variety of conditions. We evaluate SOS-Match on the Batvik seasonal dataset which includes drone flights collected over a coastal plot of southern Finland during different seasons and lighting conditions. Results show that our approach is more robust to changes in lighting and appearance than classical image feature-based approaches or global descriptor methods, and it provides more viewpoint invariance than learning-based feature detection and description approaches. SOS-Match localizes within a reference map up to 46x faster than other feature-based approaches and has a map size less than 0.5% the size of the most compact other maps. SOS-Match is a promising new approach for landmark detection and correspondence search in unstructured environments that is robust to changes in lighting and appearance and is more computationally efficient than other approaches, suggesting that the geometric arrangement of segments is a valuable localization cue in unstructured environments. We release our datasets at https://acl.mit.edu/SOS-Match/. 
+Global localization is a fundamental capability enabling long-term and drift-free robot navigation. This paper presents an outdoor global localization method based on robust registration of open-set segment maps. Our method detects and tracks segments using open-set image segmentation models that enable direct generalization to unseen environments. To perform global localization under the high outlier regimes that are typical of natural/outdoor environments, we formulate a registration problem between small submaps of 3D segments and solve for the correspondences using a graph-theoretic global data association approach. Further, to guide registration in highly noisy or ambiguous scenarios, we propose novel ways of incorporating additional information (e.g., segment attributes and known gravity direction) within the global data association formulation. The proposed method is evaluated on outdoor datasets recorded by multiple robots and shown to outperform existing methods in terms of precision-recall metrics and localization accuracy.
 
 <!-- ## Image -->
 
